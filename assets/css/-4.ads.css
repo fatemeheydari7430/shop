@@ -1,0 +1,24 @@
+/* .wrapper-ads img{
+    height: fit-content;
+} */
+
+
+.ads-col-md-3{
+    flex: 0 0 29.4%;
+    max-width: 29.4%;
+}
+.ads-col-md-6{
+    flex: 0 0 41.2%;
+    max-width: 41.2%;
+}
+
+@media screen and (max-width:768px){
+    .ads-col-md-3{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .ads-col-md-6{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

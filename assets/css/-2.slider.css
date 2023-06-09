@@ -1,0 +1,33 @@
+/* .slide-banner{
+    max-width: 200px;
+} */
+.custom-col-lg-3{
+    flex: 0 0 19%;
+    max-width: 19%;
+}
+.custom-col-lg-6{
+    flex: 0 0 61.9%;
+    max-width: 61.9%;
+}
+
+
+@media screen and (max-width:1199px){
+    .custom-col-lg-6{
+        flex: 0 0 61%;
+        max-width: 61%;
+    }
+    .custom-col-lg-3{
+        flex: 0 0 19.4%;
+        max-width: 19.4%;
+    }
+}
+@media screen and (max-width:991px){
+    .custom-col-lg-6{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .custom-col-lg-3{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}

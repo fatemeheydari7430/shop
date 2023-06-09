@@ -1,0 +1,128 @@
+@import '_1.top-nav.css';
+@import '-2.slider.css';
+@import '-3.shiping.css';
+@import '-4.ads.css';
+@import '-5.cat-nav.css';
+@import '-6.offers.css';
+@import '-7.product.css';
+@import '-8.banner-1.css';
+@import '-9.shoe.css';
+@import '-10.footer.css';
+@import '-11.login-form.css';
+
+@font-face{
+    font-family:Vazir-Medium ;
+    src: url("../fonts/Vazir-Medium.eot") format("eot"),
+         url("../fonts/Vazir-Medium.woff") format("woff"),
+         url("../fonts/Vazir-Medium.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+ 
+  *,
+  body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: Vazir-Medium;
+  }
+  
+  body{
+      direction: rtl;
+  }
+  
+  a {
+    text-decoration: none !important;
+  }
+  
+  ul,
+  ol,
+  li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  p{
+    margin: 0;
+  }
+
+
+
+  @media (max-width: 576px){
+     .mt-csm-3{
+        margin-top: 1rem !important;
+     }
+  }
+
+
+  @media (min-width: 1200px){
+    .container,
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl {
+      max-width: 1540px !important ;
+    }
+  }
+
+  @media (max-width: 991px){
+    .mt-clg-3{
+       margin-top: 1rem !important;
+    }
+ }
+
+
+ .owl-carousel .owl-nav.disabled,
+ .owl-carousel .owl-dots.disabled {
+   display: block;
+  }
+  .owl-carousel .owl-nav{
+    position: absolute;
+    top: 125px;
+    width: 100%;
+    display: flex;
+  }
+  .owl-carousel-brand .owl-nav{
+    top: 75px;
+  }
+  .owl-carousel .owl-nav .owl-next{
+    position: absolute;
+    left: -5px;
+    width: 46px;
+  }
+  .owl-carousel .owl-nav .owl-next span{
+    display: block;
+    font-size: 66px;
+    background-color: #fff;
+    box-shadow: 0 0 12px 0 #c7c7c7;
+  }
+  .owl-carousel .owl-nav .owl-next:focus{
+     outline: none;
+  }
+  .owl-carousel .owl-nav .owl-next:focus span{
+     outline: none!important;
+  }
+  .owl-carousel .owl-nav .owl-next span:hover{
+    color: #000;
+  }
+
+  .owl-carousel .owl-nav .owl-prev{
+    position: absolute;
+    right: -5px;
+    width: 46px;
+  }
+  .owl-carousel .owl-nav .owl-prev span{
+    display: block;
+    font-size: 66px;
+    background-color: #fff;
+    box-shadow: 0 0 12px 0 #c7c7c7;
+  }
+  .owl-carousel .owl-nav .owl-prev:focus{
+     outline: none;
+  }
+  .owl-carousel .owl-nav .owl-prev:focus span{
+     outline: none!important;
+  }
+  .owl-carousel .owl-nav .owl-prev span:hover{
+    color: #000;
+  }

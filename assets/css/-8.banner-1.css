@@ -1,0 +1,10 @@
+.banner-1 .banner-img-hover{
+    overflow: hidden;
+}
+.banner-1 .banner-img-hover img{
+    width: 700px;
+    transition: 1s ease;
+}
+.banner-1 .banner-img-hover:hover img{
+    transform: scale(1.1);
+}

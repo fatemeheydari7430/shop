@@ -1,0 +1,73 @@
+.glassBox {
+    width: 100%;
+    height: 400px;
+    max-width: 300px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right-color: rgba(255, 255, 255, 0.1);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%)
+}
+
+.glassBox,
+.glassBox * {
+    box-sizing: border-box;
+    transition: 400ms;
+}
+
+.glassBox__imgBox img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.glassBox__title {
+    text-align: center;
+    margin-top: 15px;
+    color: #e9e6e6;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Lato";
+}
+
+.glassBox__content {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    text-align: center;
+    color: #363434;
+    font-size: 14px;
+    font-family: "Lato";
+    letter-spacing: 0.1em;
+    opacity: 0;
+}
+
+.glassBox:hover .glassBox__imgBox {
+    transform: translateY(-50px);
+}
+
+.glassBox:hover .glassBox__imgBox img {
+    transform: translate(-20px, -40px) rotate(-15deg) scale(1.4);
+}
+
+.glassBox:hover {
+    .glassBox__content {
+        opacity: 1
+    }
+}
+
+
+.custom-shoe .owl-stage {
+    margin: 25px 0;
+}
